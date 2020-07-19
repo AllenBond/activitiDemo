@@ -11,7 +11,7 @@ import java.util.Map;
  * @author allen
  * @title: AssigneeUEL
  * @projectName activitiDemo
- * @description: 动态设置assignee
+ * @description: 第二种方式动态设置assignee（第一种方式是用固定的用户名称进行指定）
  * @date 2020/7/1715:49
  */
 public class AssigneeUEL {
@@ -35,5 +35,8 @@ public class AssigneeUEL {
         System.out.println(defaultProcessEngine.getName());
     }
 
+//    第三中方式：使用监听器进行分配assignee
+    //1。创建一个实现了TaskListener的类
+    //2。在创建bpmn文件时，配置我们的Listener。然后添加Class选定刚才TaskListener的实现类
 
 }
